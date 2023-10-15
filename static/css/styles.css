@@ -1,0 +1,48 @@
+:root {
+    /* Main color palette */
+    --asvang-green: #317873;
+    --asvang-black: #0a0908;
+    --asvang-white: #f2f4f3;
+    --asvang-red: #fe4a49;
+    --asvang-purple: #4f4789;
+}
+
+.asvang-bg-green {
+    background-color: var(--asvang-green);
+}
+
+.asvang-bg-black {
+    background-color: var(--asvang-black);
+}
+
+.asvang-bg-white {
+    background-color: var(--asvang-white);
+}
+
+.asvang-bg-red {
+    background-color: var(--asvang-red);
+}
+
+.asvang-bg-purple {
+    background-color: var(--asvang-purple);
+}
+
+.asvang-text-green {
+    color: var(--asvang-green);
+}
+
+.asvang-text-black {
+    color: var(--asvang-black);
+}
+
+.asvang-text-white {
+    color: var(--asvang-white);
+}
+
+.asvang-text-red {
+    color: var(--asvang-red);
+}
+
+.asvang-text-purple {
+    color: var(--asvang-purple);
+}
