@@ -1,0 +1,32 @@
+name: Deploy to Remote Server
+
+# Controls when the workflow will run
+#on:
+#  push:
+#    branches: [ "main" ]
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
+  
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
+    name: Deploys To Server
+
+    steps:
+      - name: Publish Files
+        uses: kentaasvang/scp_deploy@v1.1
+        with:
+          host: asvang-it.no
+          user: admin
+          private_key: ${{ secrets.PI_ID_RSA_PRIV_KEY }}
+          source_folder: .
+          destination_folder: /home/admin/asvang-it.no
