@@ -21,7 +21,7 @@ jobs:
       - name: Publish Files
         uses: kentaasvang/scp_deploy@v0.8.2b
         with:
-          host: 80.212.216.61
+          host: "80.212.216.61"
           user: admin
           private_key: ${{ secrets.PI_ID_RSA_PRIV_KEY }}
           port: 2222
