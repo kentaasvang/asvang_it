@@ -24,5 +24,6 @@ jobs:
           host: asvang-it.no
           user: admin
           private_key: ${{ secrets.PI_ID_RSA_PRIV_KEY }}
+          port: 2222
           source_folder: ./
           destination_folder: /home/admin/asvang-it.no
