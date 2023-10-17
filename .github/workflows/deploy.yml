@@ -23,10 +23,10 @@ jobs:
 
     steps:
       - name: Publish Files
-        uses: kentaasvang/scp_deploy@v1.1
+        uses: kentaasvang/scp_deploy@v0.8.2b
         with:
           host: asvang-it.no
           user: admin
           private_key: ${{ secrets.PI_ID_RSA_PRIV_KEY }}
-          source_folder: .
+          source_folder: ./
           destination_folder: /home/admin/asvang-it.no
