@@ -22,7 +22,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: SCP Deploy
-      uses: kentaasvang/scp_deploy@v2.0.0b
+      uses: kentaasvang/scp_deploy@v2.0.1b
       with:
         host: 80.212.216.61
         user: admin
