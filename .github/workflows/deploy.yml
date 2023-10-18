@@ -19,7 +19,7 @@ jobs:
 
     steps:
     - name: SCP Deploy
-      uses: kentaasvang/scp_deploy@v2.0.1b
+      uses: kentaasvang/scp_deploy@v2.0.2b
       with:
         host: 80.212.216.61
         user: admin
