@@ -22,6 +22,7 @@ jobs:
       uses: kentaasvang/scp_deploy@v2.0.3b
       with:
         host: 80.212.216.61
+        port: 2222
         user: admin
         private_key: ${{ secrets.PI_ID_RSA_PRIV_KEY }}
         source_folder: .
