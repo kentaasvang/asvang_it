@@ -18,6 +18,9 @@ jobs:
     name: Deploys To Server
 
     steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      
     - name: SCP Deploy
       uses: kentaasvang/scp_deploy@v2.0.4b
       with:
