@@ -18,12 +18,14 @@ jobs:
     name: Deploys To Server
 
     steps:
-      - name: Publish Files
-        uses: kentaasvang/scp_deploy@v0.8.2b
-        with:
-          host: "80.212.216.61"
-          user: admin
-          private_key: ${{ secrets.PI_ID_RSA_PRIV_KEY }}
-          port: 2222
-          source_folder: "."
-          destination_folder: /home/admin/asvang-it.no
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: SCP Deploy
+      uses: kentaasvang/scp_deploy@v2.0.0b
+      with:
+        host: 80.212.216.61
+        user: admin
+        private_key: ${{ secrets.PI_ID_RSA_PRIV_KEY }}
+        source_folder: .
+        destination_folder: /home/admin/asvang-it.no
