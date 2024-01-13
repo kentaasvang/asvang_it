@@ -1,5 +1,8 @@
 <script>
+	import Fa from "svelte-fa"
 	import logoWhite from "$lib/assets/logo/logo-white.svg";
+	import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+	import { faWordpressSimple } from '@fortawesome/free-brands-svg-icons';
 </script>
 
 <svelte:head>
@@ -44,7 +47,7 @@
 				<div class="col-lg-6 mb-5 mb-lg-0">
 
 					<div class="feature asvang-bg-primary bg-gradient asvang-text-light rounded-3 mb-3">
-						<i class="bi bi-wordpress"></i>
+						<Fa icon={faWordpressSimple} />
 					</div>
 
 					<h2 class="h4 fw-bolder">Wordpress</h2>
@@ -108,7 +111,7 @@
 			<div class="text-center mb-5">
 
 				<div class="feature asvang-bg-primary bg-gradient asvang-text-light rounded-3 mb-3">
-					<i class="bi bi-envelope"></i>
+					<Fa icon={faEnvelope} />
 				</div>
 
 				<h2 class="fw-bolder asvang-text-dark">Ta kontakt!</h2>
